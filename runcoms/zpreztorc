@@ -32,6 +32,9 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
+  'command-not-found' \
+  'git' \
+  'syntax-highlighting' \
   'prompt'
 
 #

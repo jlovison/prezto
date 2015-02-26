@@ -11,3 +11,13 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+# Setup virtualenvwrapper
+source /usr/bin/virtualenvwrapper.sh
+
+# Setup GOPATH
+export GOPATH=$HOME/dev/go
+export PATH=$PATH:$GOPATH/bin
+
+# Setup Nodejs binary path
+export PATH="$PATH:$HOME/.npm/bin"
