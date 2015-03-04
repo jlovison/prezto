@@ -72,3 +72,9 @@ if [[ ! -d "$TMPDIR" ]]; then
 fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
+
+#
+# Export TERM type
+#
+
+export TERM='screen-256color'
