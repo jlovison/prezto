@@ -12,8 +12,14 @@ fi
 
 # Customize to your needs...
 
+# Setup gruvbox colors
+#source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh" && clear
+
 # Setup virtualenvwrapper
 source /usr/bin/virtualenvwrapper.sh
+
+# Source .zprofile
+source ~/.zprofile
 
 # Setup GOPATH
 export GOPATH=$HOME/dev/go
@@ -24,3 +30,15 @@ export PATH="$PATH:$HOME/.npm/bin"
 
 # 10 second wait if you do something that will delete everything. I wish I'd had this before...
 setopt RM_STAR_WAIT
+
+# Aliases
+alias vim=nvim
+alias mutt='cd ~/Downloads && mutt'
+alias emacs='/usr/bin/emacsclient -nw'
+alias emacsserver='/usr/bin/emacs --daemon'
+
+###-tns-completion-start-###
+if [ -f /home/ed/.tnsrc ]; then 
+    source /home/ed/.tnsrc 
+fi
+###-tns-completion-end-###
